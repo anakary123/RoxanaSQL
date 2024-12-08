@@ -1,0 +1,198 @@
+.logo {
+    height: 40px; margin-right: 10px;
+}
+
+.nav-link.active {
+    font-weight: bold;
+    color: #ff6347; /* Cambia el color al enlace activo */
+    border-bottom: 2px solid #ff6347; /* Línea inferior para resaltar */
+
+}
+
+.carousel-inner img {
+    object-fit: cover; /* Ajusta las imágenes para que llenen el contenedor */
+    max-height: 500px; /* Altura máxima para pantallas grandes */
+}
+
+@media (max-width: 768px) {
+    .carousel-inner img {
+        max-height: 300px; /* Altura máxima para pantallas pequeñas */
+    }
+}
+
+/* Ajustar el tamaño de las imágenes en los servicios */
+#servicios .card-img-top {
+    height: 150px; /* Ajusta la altura */
+    object-fit: cover; /* Recorta la imagen para que se ajuste al espacio */
+    border-radius: 8px; /* Añade bordes redondeados (opcional) */
+}
+
+/* Opcional: margenes entre tarjetas en pantallas pequeñas */
+@media (max-width: 576px) {
+    #servicios .card {
+        margin-bottom: 15px;
+    }
+}
+
+.card-title {
+    text-align: center;
+}
+
+/*Estilos de Galeria*/
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.gallery-item {
+    overflow: hidden;
+    position: relative;
+}
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    display: block;
+}
+.gallery-item:hover img {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+.gallery-item {
+    flex: 1 1 calc(33.333% - 16px); /* Ajuste para que las imágenes se ajusten a 3 por fila */
+    box-sizing: border-box;
+}
+.imgGaleria {
+    width: 100%; /* Las imágenes ocupan todo el espacio disponible */
+    height: 200px; /* Altura fija para todas las imágenes */
+    object-fit: cover; /* Asegura que las imágenes se recorten de manera uniforme */
+}
+
+/* Estilos para el Footer */
+.columna{
+    margin-left: 90px;
+}
+
+#footer {
+    background-color: #74747436; /* Fondo gris muy suave */
+    color: #333; /* Texto oscuro para buen contraste */
+    text-align: center;
+    padding: 30px 20px;
+    font-family: 'Arial', sans-serif; /* Fuente sencilla y moderna */
+    border-top: 1px solid #ddd; /* Línea suave en el borde superior */
+}
+
+.footer a {
+    text-decoration: none;
+    color: #888; /* Color gris tenue para los enlaces */
+    font-weight: normal; /* Peso de fuente normal para los enlaces */
+    transition: color 0.3s ease; /* Transición suave para cambios de color */
+}
+
+.footer a:hover {
+    text-decoration: underline; /* Subrayado al pasar el cursor */
+    color: #555; /* Gris un poco más oscuro al hacer hover */
+}
+
+.social-link {
+    margin: 0 10px;
+    font-size: 20px;
+    color: #888; /* Color gris suave */
+    transition: color 0.3s ease, transform 0.3s ease; /* Transición suave para el color */
+}
+
+.social-link:hover {
+    color: #555; /* Gris más oscuro al pasar el cursor */
+    transform: scale(1.1); /* Efecto de suavidad al pasar el cursor */
+}
+
+.footer .social-links {
+    margin-top: 15px;
+    font-size: 12px;
+}
+
+.footer .social-links a {
+    margin: 0 10px;
+}
+
+.footer p {
+    font-size: 14px; /* Tamaño pequeño para el texto */
+    margin-top: 15px;
+    color: #777; /* Gris más suave para el texto del pie */
+}
+.columna {
+    flex: 1; padding: 5px;
+    padding: 5px;
+}
+/*estilos contacto*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input, textarea, button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    width: auto;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button[type="reset"] {
+    background-color: #f44336;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+}
+
